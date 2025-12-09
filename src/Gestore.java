@@ -13,7 +13,7 @@ public class Gestore {
     public synchronized void segnalaArrivo(Astronave a) {
         if (vincitore == null) {
             vincitore = a;
-            System.out.println("🏆 Vincitore: " + a.getModello() + " (ID " + a.getId() + ")");
+            System.out.println(" Vincitore: " + a.getModello() + " ID " + a.getId() );
         }
     }
 }

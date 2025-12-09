@@ -1,5 +1,5 @@
+class GaraAstronavi {
 
- class GaraAstronavi {
     public static void main(String[] args) {
         Gestore g = new Gestore();
 
@@ -10,19 +10,13 @@
         t1.start();
         t2.start();
         t3.start();
+
+        try {
+            t1.join();
+            t2.join();
+            t3.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
-}
-
-
-    try {
-        a1.join();
-        a2.join();
-        a3.join();
-        a4.join();
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-
-
-
 }
